@@ -21,7 +21,6 @@ pipeline {
         echo 'deploy'
         bat "copy build\\libs\\*.jar d:\\deploy\\"
         bat "run.bat"
-        bat 'start /b java -jar d:\\deploy\\todo-list-0.0.1-SNAPSHOT.jar'
       }
     }
   }
