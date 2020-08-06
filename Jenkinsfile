@@ -1,7 +1,7 @@
 pipeline {
   agent { label 'master' }
   environment {
-    BUILD_ID = "donotkillme"
+    JENKINS_NODE_COOKIE = "donotkillme"
   }
   stages {
     stage('test') {
